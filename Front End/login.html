@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login | Welcome to Josh Frontend</title>
+    <!--global css starts-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!--end of global css-->
+
+    <!--page level css starts-->
+    <link type="text/css" rel="stylesheet" href="vendors/icheck/skins/all.css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <!--end of page level css-->
+</head>
+
+<body>
+<div class="container">
+    <!--Content Section Start -->
+    <div class="row">
+        <div class="box animation flipInX">
+            <div class="box1">
+            <img src="images/josh-new.png" alt="logo" class="img-responsive mar">
+            <h3 class="text-primary">Login</h3>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label class="sr-only"></label>
+                    <input class="form-control" type="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only"></label>
+                    <input class="form-control" type="password" placeholder="Password">
+                </div>
+                <div class="checkbox text-left">
+                    <label>
+                        <input type="checkbox">  Remember Password
+                    </label>
+                </div>
+                <input type="submit" class="btn btn-block btn-primary" value="Login">
+                <p>Don't have an account? <a href="register.html"><strong> Sign up</strong></a></p>
+            </form>
+            </div>
+        <div class="bg-light animation flipInX">
+            <a href="forgot.html">Forgot Password?</a>
+        </div>
+        </div>
+    </div>
+    <!-- //Content Section End -->
+</div>
+<!--global js starts-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--global js end-->
+<script type="text/javascript" src="vendors/icheck/icheck.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("input[type='checkbox']").iCheck({
+            checkboxClass: 'icheckbox_minimal-blue'
+        });
+    });
+</script>
+</body>
+
+</html>
